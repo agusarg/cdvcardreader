@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="org.apache.cordova.device" version="0.2.3">
+        <name>Echo</name>
+        <description>Cordova Device Plugin</description>
+        <license>Apache 2.0</license>
+        <keywords>cordova,device</keywords>
+
+        <platform name="ios">
+            <config-file target="config.xml" parent="/*">
+                <feature name="Echo">
+                    <param name="ios-package" value="Echo"/>
+                </feature>
+            </config-file>
+            <header-file src="src/ios/Echo.h" />
+            <source-file src="src/ios/Echo.m" />
+        </platform>
+    </plugin>
